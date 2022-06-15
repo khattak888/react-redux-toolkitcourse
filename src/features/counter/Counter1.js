@@ -1,0 +1,30 @@
+import { useState } from "react";
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <button
+        className="button"
+        aria-aria-label="Increment value"
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        +
+      </button>
+      <span className="value">Count: {count}</span>
+      <button
+        className="button"
+        aria-aria-label="Decrement value"
+        onClick={() => {
+          setCount(count - 1);
+        }}
+      >
+        -
+      </button>
+    </div>
+  );
+};
+
+export default Counter;
